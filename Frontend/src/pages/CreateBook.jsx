@@ -26,7 +26,6 @@ const CreateBook = () => {
     }).catch(err => {
       setLoading(false);
       enqueueSnackbar('Error',{variant: 'error'})
-      console.log(err);
     })
   }
   return (

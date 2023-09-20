@@ -20,7 +20,6 @@ app.get('/', (req, res) => {
         res.status(200).send('welcome to the bookstore applicaion')
     } 
     catch (error) {
-        console.log(error.message);
         res.status(500).send({message: error.message})
     }
 });
@@ -29,6 +28,4 @@ app.get('/', (req, res) => {
 
 
 //  app listener
-app.listen(PORT, () => {
-    console.log("App is listening to port :", PORT);
-}) 
+app.listen(PORT) 

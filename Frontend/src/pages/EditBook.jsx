@@ -23,7 +23,6 @@ const EditBook = () => {
     }).catch(err => {
       setLoading(false);
       alert('An error happened. Please Check the console');
-      console.log(err);
     }) 
   },[])
   const handleEditBook = () => {
@@ -40,7 +39,6 @@ const EditBook = () => {
     }).catch(err => {
       setLoading(false);
       enqueueSnackbar("Error",{variant:"error"});
-      console.log(err);
     })
   }
   return (

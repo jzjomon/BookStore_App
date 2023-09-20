@@ -26,7 +26,6 @@ router.post('/', (req, res) => {
         }
         
     } catch (error) {
-        console.log(error.message);
         res.status(500).send({message: error.message})
     }
 })
@@ -42,7 +41,6 @@ router.get('/', (req, res) => {
         })
     }
     catch (error) {
-        console.log(error.message);
         res.status(500).send({message : error.message});
     }
 })
@@ -56,7 +54,6 @@ router.get('/:id', (req, res) => {
         })
     }
     catch (error) {
-        console.log(error.message);
         res.status(500).send({message : error.message});
     }
 })
@@ -81,7 +78,6 @@ router.put('/:id', (req, res) => {
             })
         }
     } catch (error) { 
-        console.log(error.message);
         res.status(500).send({message : error.message})
     } 
 })
@@ -96,7 +92,6 @@ router.delete('/:id', (req, res) => {
             res.status(404).json({message : "Book not found"})
         })
     } catch (error) {
-        console.log(error.message);
         res.status(500).send({message : error.message});
     }
 })

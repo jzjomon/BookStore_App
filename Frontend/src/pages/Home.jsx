@@ -21,7 +21,6 @@ const Home = () => {
             setBooks(res.data.data);
             setLoading(false);
         }).catch(err => {
-            console.log(err);
             setLoading(false)
         })
     }, [])
